@@ -1,5 +1,7 @@
 {
   "dependencies": {
     "com.unity.test-framework": "1.1.16"
+    "com.andreimarks.bones": "https://github.com/andreimarks/bones.git#package",
+    "com.unity.ide.rider": "1.1.4",
   }
 }
