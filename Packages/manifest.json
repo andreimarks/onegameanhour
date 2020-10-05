@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "com.andreimarks.bones": "https://github.com/andreimarks/bones.git#package",
-    "com.unity.ide.rider": "1.1.4"
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.unity.ide.rider": "1.1.4",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.physics2d": "1.0.0",
+    "com.unity.modules.unitywebrequest": "1.0.0"
   }
 }

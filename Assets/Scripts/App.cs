@@ -4,16 +4,18 @@ using UnityEngine;
 
 using Bones.TextWriter;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class App : MonoBehaviour
 {
     private void Start()
     {
-        var wp = new WordProcessorUI();
-        var tws = new TextSerializer();
-        var tw  = new TODO_TextWriter(wp, tws);
+        var input = new KeyboardInput();
+        var ui = new AndreiJournalUI();
+        var serializer = new TextSerializer();
+        var tw  = new TextWriter(input, ui, serializer);
 
-        wp.MakeFullScreen();
-        wp.SetTextAlignment(TextAlignmentOptions.TopLeft);
+        ui.MakeFullScreen();
+        ui.SetTextAlignment(TextAlignmentOptions.TopLeft);
     }
 }

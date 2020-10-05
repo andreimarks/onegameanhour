@@ -9,7 +9,8 @@ namespace Bones.TextWriter
     {
         private StringBuilder _sb;
         private Canvas _canvas;
-        private TextMeshProUGUI _mainText;
+        
+        protected TextMeshProUGUI _mainText;
 
         public WordProcessorUI()
         {
@@ -44,10 +45,21 @@ namespace Bones.TextWriter
         {
             _mainText.alignment = alignment;
         }
-        
+
         public void UpdateWithText(string newText)
         {
+            throw new System.NotImplementedException();
+        }
+
+        public virtual void AppendText(string newText)
+        {
             _sb.Append(newText);
+            _mainText.text = _sb.ToString();
+        }
+
+        public virtual void DeleteText(int numCharsToDelete)
+        {
+            _sb.Length = _sb.Length - 1;
             _mainText.text = _sb.ToString();
         }
     }
