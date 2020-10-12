@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using Bones.TextWriter;
-using UnityEditor;
 using UnityEngine;
 
 namespace Bones.TextWriter
@@ -44,10 +42,6 @@ namespace Bones.TextWriter
         {
             _streamWriter = new StreamWriter(_FullPath, append: true);
             _streamWriter.Write(DateTime.Now);
-
-#if UNITY_EDITOR
-            EditorUtility.RevealInFinder(_FullPath);
-#endif
         }
 
         public void UpdateWithText(string text)

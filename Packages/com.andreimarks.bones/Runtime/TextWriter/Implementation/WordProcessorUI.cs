@@ -48,7 +48,7 @@ namespace Bones.TextWriter
 
         public void UpdateWithText(string newText)
         {
-            throw new System.NotImplementedException();
+            AppendText(newText);
         }
 
         public virtual void AppendText(string newText)

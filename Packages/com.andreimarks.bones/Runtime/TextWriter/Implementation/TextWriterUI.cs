@@ -25,5 +25,15 @@ namespace Bones.TextWriter
         {
             _mainText.text = newText;
         }
+
+        public void AppendText(string newText)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void DeleteText(int charsToDelte)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
